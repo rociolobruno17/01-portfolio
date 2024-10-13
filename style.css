@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E3DED8;
+}
+
+.contenedor-menu {
+    display: none; /* Oculta los links */
+}
+
+.icono {
+    display: flex; /* Muestra el ícono */
+    justify-content: end;
+    height: 40px;
+    align-items: center;
+}
+.icono img {
+    margin: 20px 20px 0 0;
+    height: 70%;
+    color:  #302a33;
+}
+
+#intro {
+    width: 85%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #F5F3F0;
+    border-radius: 20px;
+}
+
+#intro img {
+    width: auto;
+    height: 400px;
+}
+.contenedor-info {
+    margin: 10px;
+    font-family: "Manrope", sans-serif;
+}
+
+#intro h1 {
+    margin-top: -50px;
+    font-size: 50px;
+    color:  #302a33
+}
+#intro p {
+    margin-top: -40px;
+    font-size: 21px;
+    color: #79747c;
+}
+
+#intro .boton-proyectos {
+    background-color: #9d79f3;
+    color:white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    outline: none;
+  }
+  
+  #intro .boton-proyectos:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); 
+  }
+  
+  #intro .boton-proyectos:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+  }
+  
+  #intro .boton-proyectos:focus {
+    outline: 2px solid #9d79f3 (0, 122, 255, 0.4);
+  }
+
+#sobre-mi .linea-decorativa {
+    height: 2px;
+    background-color: #9d79f3;
+    width: 6%;
+    border-style: none;
+  }
+
+#sobre-mi {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-family: "Manrope", sans-serif;
+    color: #302a33;
+
+}
+
+
+#sobre-mi h2 {
+    margin-top: 60px;
+    font-size: 18px;
+    color:  #79747c;
+}
+
+#sobre-mi img {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 300px;
+}
+
+#sobre-mi p {
+    margin: 50px;
+    margin-top: -20px;
+    font-size: 16px;
+    color: #79747c;
+}
+
+
+#sobre-mi .boton-descargar {
+    background-color: white;
+    color: #9d79f3;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    outline: none;
+  }
+  
+  #sobre-mi .boton-descargar:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); 
+  }
+  
+  #sobre-mi .boton-descargar:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+  }
+  
+  #sobre-mi .boton-descargar:focus {
+    outline: 2px solid #9d79f3 (0, 122, 255, 0.4);
+}
+
+#proyectos {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-family: "Manrope", sans-serif;
+    color: #302a33;
+}
+
+#proyectos .linea-decorativa {
+    height: 2px;
+    background-color: #9d79f3;
+    width: 6%;
+    border-style: none;
+  }
+
+#proyectos h2 {
+    margin-top: 60px;
+    font-size: 18px;
+    color:  #79747c;
+}
+
+#proyectos .grilla-proyectos {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.grilla-proyectos .proyecto {
+    margin: 20px;
+    width: 100%;
+    background-color: #F5F3F0;
+    border-radius: 20px;
+}
+
+.grilla-proyectos .proyecto img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+
+}
+.grilla-proyectos .proyecto h3 {
+    padding: 20px;
+    font-family: "Manrope", sans-serif;
+    color:#79747c;
+
+}
+
+
+@media (min-width: 768px) {  /* tablet */
+    header {
+        height: 40px; /* Alto fijo del header */
+        width: 100vw;
+    }
+    
+    .contenedor-menu {
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin-top: 20px;
+        padding: 0;
+    }
+    
+    .link {
+        text-decoration: none; /* Quita el subrayado de los links */
+        color: #696969; /* Color de los links */
+        font-size: 16px; /* Tamaño de fuente de los links */
+        font-family: "Libre Franklin", sans-serif;
+    }
+    
+    .icono {
+        display: none; /* Oculta el ícono por defecto */
+    }
+
+    #intro {
+        display: flex;
+        width: 94%;
+        margin: 10px;
+        padding: 10px;
+        background-color: #F5F3F0;
+        border-radius: 20px;
+    }
+
+    #intro img {
+        width: auto;
+        height: 400px;
+    }
+
+    .contenedor-info {
+        margin: 0;
+        padding: 0;
+        font-family: "Manrope", sans-serif;
+    }
+
+    #intro h1 {
+        margin-top: 90px;
+        font-size: 70px;
+        font-weight:900;
+        color: #33302A
+    }
+
+    #intro p {
+        margin-top: -50px;
+        font-size: 20px;
+        color: #7C7974
+    }
+
+    #sobre-mi img {
+        margin: 0;
+        width: auto;
+        height: 500px;
+    }
+    #sobre-mi p {
+        margin: 70px;
+        margin-top: -20px;
+        font-size: 18px;
+        color: #79747c;
+    }
+
+    .grilla-proyectos .proyecto {
+        width: 40%;
+        background-color: #F5F3F0;
+        border-radius: 20px;
+    }
+    
+}
+
+
+
+@media (min-width: 1024px) { /* escritorio */
+    #intro {
+        display: flex;
+        width: 95%;
+        margin: 10px;
+        padding: 10px;
+        background-color: #F5F3F0;
+        border-radius: 20px;
+    }
+    
+    #intro img {
+        width: auto;
+        height: 600px;
+    }
+    .contenedor-info {
+        font-family: "Manrope", sans-serif;
+    }
+    #intro h1 {
+        margin-top: 200px;
+        font-size: 100px;
+        font-weight:900;
+        color: #33302A
+    }
+    #intro p {
+        margin-top: -50px;
+        font-size: 30px;
+        color: #7C7974
+    }
+    
+    #sobre-mi img {
+        margin: 0;
+        width: auto;
+        height: 600px;
+    }
+
+    #sobre-mi p {
+        margin: 70px;
+        margin-top: -20px;
+        font-size: 21px;
+        color: #79747c;
+    }
+
+    .grilla-proyectos .proyecto {
+        width: 40%;
+        background-color: #F5F3F0;
+        border-radius: 20px;
+    }
+    
+}
