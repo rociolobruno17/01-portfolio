@@ -229,7 +229,52 @@ body {
     color:  #302a33;
     font-weight:bolder;
 }
+ 
+#contacto form {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
 
+#contacto label {
+    display: flex;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    color:  #302a33;
+    font-weight:bolder;
+}
+
+#contacto form input {
+    background: none;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+    padding: 8px 0;
+    margin-bottom: 60px;
+    outline: none;
+    font-family: "Manrope", sans-serif;
+
+}
+
+#contacto form select {
+    background: none;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+    padding: 8px 0;
+    margin-bottom: 60px;
+    outline: none;
+    font-family: "Manrope", sans-serif;
+}
+
+#contacto form option {
+    background-color: #F5F3F0;
+}
 
 @media (min-width: 768px) {  /* tablet */
     header {
