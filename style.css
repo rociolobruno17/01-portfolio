@@ -201,15 +201,18 @@ body {
 }
 
 #contacto .contenedor-img {
-    width: 300px;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #contacto .contenedor-img img {
-    width: 200px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
 }
 
 #contacto .contenedor-info {
@@ -230,7 +233,7 @@ body {
  
 #contacto form {
     margin: 10px;
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -379,6 +382,19 @@ body {
         background-color: #F5F3F0;
         border-radius: 20px;
     }
+
+    #contacto .contenedor-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #contacto .contenedor-img img {
+        width: 250px;
+    }
+
+
     
 }
 
@@ -431,5 +447,19 @@ body {
         background-color: #F5F3F0;
         border-radius: 20px;
     }
-    
+
+    #contacto .contenedor-img img {
+        position: relative;
+        top: 100px;
+        right: 500px;
+        width: 500px;
+    }
+
+    #contacto .contenedor-info {
+        width: 50%;
+        position: relative;
+        left: 600px;
+        top: -550px;
+    }
+
 }
