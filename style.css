@@ -189,6 +189,47 @@ body {
 
 }
 
+#contacto {
+    margin: 0px;
+    background-image: url(./fondo-contacto.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: 1000px;
+    display: flex;
+    justify-content:flex-start;  /*main axis eje horizontal*/
+    align-items: stretch;  /*cross axis eje vertical con flex direction lo puedo ubicar horizontal, el flex direction me cambia el eje*/
+    flex-direction: column;  /*en columna*/
+}
+
+#contacto .contenedor-img {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#contacto .contenedor-img img {
+    width: 200px;
+}
+
+#contacto .contenedor-info {
+    margin: 10px;
+    font-family: "Manrope", sans-serif;
+}
+
+#contacto .contenedor-info p {
+    font-size: 21px;
+    color: #79747c;
+}
+
+#contacto .contenedor-info h2 {
+    font-size: 40px;
+    color:  #302a33;
+    font-weight:bolder;
+}
+
 
 @media (min-width: 768px) {  /* tablet */
     header {
