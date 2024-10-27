@@ -11,11 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -41,9 +36,9 @@
                 <h1>Hola, soy <b>Ro Lobru</b>
                 </h1>
                 <p> <b>UX/UI Designer & Frontend Developer</b>
-                    <br> y desarrollaré tu próxima gran idea.
+                     y desarrollaré tu próxima gran idea.
                 </p>
-                <button class="boton-proyectos">Mis proyectos</button>
+                <button class="boton-proyectos" onclick="location.href='#proyectos'">Mis proyectos</button>
             </div>
         </section>
 
@@ -56,51 +51,58 @@
                 y gestión de <b>sistemas de diseño.</b> La fuerte vinculación al mundo de productos digitales me llevó a
                 estudiar la carrera de <b>Desarrollo Frontend</b>. Al mismo tiempo trabajo como <b>Visual Designer</b>
                 freelance.
-                <br><br>Me encanta desenvolverme donde la forma, el color y la funcionalidad se unen para crear
+
+
+                Me encanta desenvolverme donde la forma, el color y la funcionalidad se unen para crear
                 <b>soluciones intuitivas y centradas en las personas</b>, transformando ideas en <b>experiencias
                     digitales memorables y efectivas</b>.
-                <br><br><b>Ah, y me encanta tomar mate 🧉</b>
+
+                    
+                <b>Ah, y me encanta tomar mate 🧉</b>
             </p>
-            <button class="boton-descargar">Descargar CV</button>
+            <a href="./cv-ro-lobru.pdf" download="CV_Ro_Lobru">
+                <button class="boton-descargar">Descargar CV</button>
+            </a>
         </section>
 
         <section id="proyectos">
             <h2>PROYECTOS</h2>
             <hr class="linea-decorativa">
-
+        
             <div class="grilla-proyectos">
 
-                <section class="proyecto">
-                    <img src="./proyecto1.png" alt="proyecto branding">
+                <section class="proyecto" >
+                <img src="./proyecto1.png" alt="proyecto branding" >
                     <h3 class="branding">BRANDING</h3>
                 </section>
 
-                <section class="proyecto">
-                    <img src="./proyecto2.png" alt="proyecto ux/ui design">
-                    <h3 class="branding">UX/UI DESIGN</h3>
+                <section class="proyecto" >
+                <img src="./proyecto2.png" alt="proyecto ux/ui design">
+                <h3 class="branding">UX/UI DESIGN</h3>
                 </section>
 
                 <section class="proyecto">
-                    <img src="./proyecto3.png" alt="proyecto design system">
-                    <h3 class="branding">DESIGN SYSTEM</h3>
+                <img src="./proyecto3.png" alt="proyecto design system">
+                <h3 class="branding">DESIGN SYSTEM</h3>
                 </section>
 
                 <section class="proyecto">
-                    <img src="./proyecto4.png" alt="proyecto fontend developer">
-                    <h3 class="branding">FRONTEND DEVELOPER</h3>
-                </section>
+                <img src="./proyecto4.png" alt="proyecto fontend developer">
+                <h3 class="branding">FRONTEND DEVELOPER</h3>
+            </section>
 
             </div>
         </section>
 
+
         <section id="contacto">
 
-            <form>
+            <div>
                 <div class="contenedor-img">
                     <img src="./matesintexto.png" alt="mate-bebida-creativa">
                 </div>
 
-                <div class="contenedor-info">
+                <form class="contenedor-info">
                     <p>Estamos a un click</p>
                     <h2>Empecemos a crear grandes cosas juntos
                     </h2>

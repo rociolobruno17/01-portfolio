@@ -1,4 +1,8 @@
-html, body {
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     margin: 0;
     padding: 0;
     height: 100%; 
@@ -12,18 +16,18 @@ main {
 }
 
 
-.contenedor-menu {
+header nav .contenedor-menu {
     display: none;
     margin: 20px;
 }
 
-.icono {
+header nav .icono {
     display: flex;
     justify-content: end;
     height: 40px;
     align-items: center;
 }
-.icono img {
+header nav .icono img {
     margin: 20px 20px 0 0;
     height: 70%;
     color:  #302a33;
@@ -41,23 +45,23 @@ main {
     width: auto;
     height: 400px;
 }
-.contenedor-info {
+#intro .contenedor-info {
     margin: 10px;
     font-family: "Manrope", sans-serif;
 }
 
-#intro h1 {
+#intro .contenedor-info h1 {
     margin-top: -50px;
     font-size: 50px;
     color:  #302a33
 }
-#intro p {
-    margin-top: -10px;
+#intro .contenedor-info p {
+    margin-top: -20px;
     font-size: 21px;
     color: #79747c;
 }
 
-#intro .boton-proyectos {
+#intro .contenedor-info .boton-proyectos {
     background-color: #9d79f3;
     color:white;
     border: none;
@@ -70,17 +74,17 @@ main {
     outline: none;
   }
   
-  #intro .boton-proyectos:hover {
+  #intro .contenedor-info .boton-proyectos:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px); 
   }
   
-  #intro .boton-proyectos:active {
+  #intro .contenedor-info .boton-proyectos:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(1px);
   }
   
-  #intro .boton-proyectos:focus {
+  #intro .contenedor-info .boton-proyectos:focus {
     outline: 2px solid #9d79f3 (0, 122, 255, 0.4);
   }
 
@@ -108,14 +112,15 @@ main {
 }
 
 #sobre-mi img {
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     width: auto;
     height: 300px;
 }
 
 #sobre-mi p {
-    margin: 50px;
+    text-align: left;
+    margin: 20px;
     margin-top: -20px;
     font-size: 16px;
     color: #79747c;
@@ -196,6 +201,7 @@ main {
 
 }
 
+
 /* #contacto {
     margin: 0px;
     background-image: url(./fondo-contacto.png);
@@ -208,15 +214,21 @@ main {
     align-items: stretch; 
     flex-direction: column;
 } */
+
 #contacto {
     margin: 0;
     background-image: url(./fondo-contacto.png);
-    background-position:center;
+    background-position: center;
+    background-size: cover;
+    width: 100%
+
+    
+    /* background-position:center;
     background-size: cover;
     display: flex;
     justify-content:flex-start; 
     align-items: stretch;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 #contacto .contenedor-img {
@@ -235,12 +247,11 @@ main {
 }
 
 #contacto .contenedor-info {
-    margin: 10px;
     font-family: "Manrope", sans-serif;
 }
 
 #contacto .contenedor-info p {
-    font-size: 21px;
+    font-size: 16px;
     color: #79747c;
 }
 
@@ -248,6 +259,7 @@ main {
     font-size: 40px;
     color:  #302a33;
     font-weight:bolder;
+    margin-top: -10px;
 }
  
 #contacto form {
@@ -341,34 +353,30 @@ footer .contenedor-footer {
         width: 100vw;
     }
     
-    .contenedor-menu {
+    header nav .contenedor-menu {
         height: 40px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         list-style: none;
-        margin-top: 20px;
+        margin-top: 10px;
         padding: 0;
     }
     
-    .link {
+    header nav .link {
         text-decoration: none; /* Quita el subrayado de los links */
         color: #696969; /* Color de los links */
         font-size: 16px; /* Tamaño de fuente de los links */
         font-family: "Libre Franklin", sans-serif;
     }
     
-    .icono {
+    header nav .icono {
         display: none; /* Oculta el ícono por defecto */
     }
 
     #intro {
         display: flex;
         width: 94%;
-        margin: 10px;
-        padding: 10px;
-        background-color: #F5F3F0;
-        border-radius: 20px;
     }
 
     #intro img {
@@ -382,27 +390,23 @@ footer .contenedor-footer {
         font-family: "Manrope", sans-serif;
     }
 
-    #intro h1 {
-        margin-top: 90px;
+    #intro .contenedor-info h1 {
+        margin-top: 50px;
         font-size: 70px;
         font-weight:900;
         color: #33302A
     }
 
-    #intro p {
-        margin-top: -50px;
+    #intro .contenedor-info p {
         font-size: 20px;
         color: #7C7974
     }
 
     #sobre-mi img {
-        margin: 0;
         width: auto;
-        height: 500px;
+        height: 250px;
     }
     #sobre-mi p {
-        margin: 70px;
-        margin-top: -20px;
         font-size: 18px;
         color: #79747c;
     }
@@ -412,9 +416,11 @@ footer .contenedor-footer {
         background-color: #F5F3F0;
         border-radius: 20px;
     }
+    
+
 
     #contacto .contenedor-img {
-        width: 100%;
+        width: 45%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -432,28 +438,24 @@ footer .contenedor-footer {
 
 @media (min-width: 1024px) { /* escritorio */
     #intro {
-        display: flex;
         width: 95%;
-        margin: 35px;
-        padding: 10px;
-        background-color: #F5F3F0;
-        border-radius: 20px;
+        margin: 15px;
     }
     
     #intro img {
         width: auto;
         height: 600px;
     }
-    .contenedor-info {
+    #intro .contenedor-info {
         font-family: "Manrope", sans-serif;
     }
-    #intro h1 {
-        margin-top: 200px;
+    #intro .contenedor-info h1 {
+        margin-top: 250px;
         font-size: 100px;
         font-weight:900;
         color: #33302A
     }
-    #intro p {
+    #intro .contenedor-info p {
         margin-top: -50px;
         font-size: 30px;
         color: #7C7974
@@ -462,14 +464,16 @@ footer .contenedor-footer {
     #sobre-mi img {
         margin: 0;
         width: auto;
-        height: 600px;
+        height: 400px;
     }
 
     #sobre-mi p {
-        margin: 70px;
-        margin-top: -20px;
+        margin-right: 200px;
+        margin-left: 200px;
+        margin-top: 20px;
         font-size: 21px;
         color: #79747c;
+        text-align: center;
     }
 
     .grilla-proyectos .proyecto {
@@ -478,11 +482,13 @@ footer .contenedor-footer {
         border-radius: 20px;
     }
 
+
     #contacto .contenedor-img img {
         position: relative;
         top: 100px;
-        right: 500px;
+        right: 100px;
         width: 500px;
+    
     }
 
     #contacto .contenedor-info {
