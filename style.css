@@ -182,16 +182,26 @@ header nav .icono img {
     flex-wrap: wrap;
 }
 
+#proyectos .grilla-proyectos a {
+    text-decoration: none;
+}
+
+
 .grilla-proyectos .proyecto {
     margin: 20px;
     width: 100%;
     background-color: #F5F3F0;
-    border-radius: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: box-shadow 0.3s ease-in-out;
+}
+.grilla-proyectos .proyecto:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.20); /* Sombra más fuerte */
 }
 
 .grilla-proyectos .proyecto img {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 16px 16px 0 0;
 
 }
 .grilla-proyectos .proyecto h3 {
@@ -230,10 +240,18 @@ header nav .icono img {
 
 #skills div {
     width: 20%;
-    margin: 2px;
+    margin: 5px;
     padding: 10px;
     background-color: #D1CFCC;
-    border-radius: 8px;
+    border-radius: 16px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+
+}
+
+#skills div:hover {
+    background-color:#E3DED8;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.20); /* Sombra más fuerte */
+
 }
 
 
@@ -242,14 +260,16 @@ header nav .icono img {
 }
 
 #skills div h3 {
-        text-align: center;
-
+    text-align: center;
     font-size: 18px;
     color:  #7C7974;
     font-family: "Manrope", sans-serif;
 }
 
-
+#skills div h3:hover {
+    color: #9d79f3;
+    font-weight:900;
+}
 
 
 
