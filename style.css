@@ -15,26 +15,43 @@ main {
     flex: 1; /* Esto hace que ocupe el espacio restante */
 }
 
-
 header nav .contenedor-menu {
     display: none;
-    margin: 20px;
+}
+
+header nav section {
+    width: 100%;
+    display: flex;
+}
+
+header nav .logo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 60px;
+    margin: 10px 0 0 10px;
+}
+
+header nav .logo img {
+    height: 70%;
+    color:  #9d79f3;
 }
 
 header nav .icono {
     display: flex;
-    justify-content: end;
-    height: 40px;
+    justify-content: right;
     align-items: center;
+    height: 40px;
+    margin: 20px 0 0 220px;
 }
+
 header nav .icono img {
-    margin: 20px 20px 0 0;
     height: 70%;
-    color:  #302a33;
+    color:  #9d79f3;
 }
 
 #intro {
-    width: 85%;
+    width: 87%;
     margin: 10px;
     padding: 10px;
     background-color: #F5F3F0;
@@ -274,28 +291,20 @@ header nav .icono img {
 
 
 
-
-
-
-
 #contacto {
+    width: 100%;
     margin: 0;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
     background-image: url(./fondo-contacto.png);
     background-position: center;
     background-size: cover;
-    width: 100%
 
-    
-    /* background-position:center;
-    background-size: cover;
-    display: flex;
-    justify-content:flex-start; 
-    align-items: stretch;
-    flex-direction: column; */
 }
 
 #contacto .contenedor-img {
-    width: 100%;
+    width: 40%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -304,7 +313,7 @@ header nav .icono img {
 }
 
 #contacto .contenedor-img img {
-    width: 150px;
+    width: 100px;
     display: flex;
     justify-content: center;
 }
@@ -432,8 +441,13 @@ footer .contenedor-footer {
         font-size: 16px; /* Tamaño de fuente de los links */
         font-family: "Libre Franklin", sans-serif;
     }
+
+    header nav .link:hover {
+        color: #9d79f3; /* Color de los links */
+        font-weight: 700;
+    }
     
-    header nav .icono {
+    header nav .logo .icono {
         display: none; /* Oculta el ícono por defecto */
     }
 
@@ -500,6 +514,11 @@ footer .contenedor-footer {
 
 
 @media (min-width: 1024px) { /* escritorio */
+
+    header nav .logo .icono {
+        display: none; /* Oculta el ícono por defecto */
+    }
+
     #intro {
         width: 95%;
         margin: 15px;
@@ -545,25 +564,16 @@ footer .contenedor-footer {
         border-radius: 20px;
     }
 
-
-    }
-
-
-
-
-
-    /* #contacto .contenedor-img img {
+    #contacto .contenedor-img img {
         position: relative;
         top: 100px;
+        left: -300px;
         right: 100px;
-        width: 500px;
-    
     }
-
     #contacto .contenedor-info {
-        width: 50%;
         position: relative;
-        left: 600px;
-        top: -550px;
-    } */
+        left: 200px;
+        top: -350px;
 
+    }
+}
