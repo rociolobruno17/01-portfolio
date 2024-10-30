@@ -15,21 +15,14 @@
       }
     </style>
   </defs>
-  <rect class="cls-2" width="96" height="96" rx="11.28" ry="11.28" transform="translate(96 96) rotate(180)"/>
+  <rect class="cls-2" x="0" width="96" height="96" rx="11.28" ry="11.28" transform="translate(96 96) rotate(180)"/>
   <g>
-    <path class="cls-1" d="m66.59,82.7h12.53v-9.91h-19.83v9.91h7.3Z"/>
-    <path class="cls-1" d="m67.59,23.22h11.54v49.58h9.9V23.21h-9.9v-9.91h-19.83v9.91h8.29Z"/>
-    <path class="cls-1" d="m29.41,13.3h-12.54v9.91h19.83v-9.91h-7.3Z"/>
-    <path class="cls-1" d="m28.41,72.79h-11.54V23.21H6.98v49.59h9.9v9.91h19.83v-9.91h-8.29Z"/>
-    <path class="cls-1" d="m52.31,39.21h5.53v-5.53h-5.53v5.53Z"/>
-    <path class="cls-1" d="m57.83,44.72h5.53v-5.53h-5.53v5.53Z"/>
-    <path class="cls-1" d="m63.36,50.26h5.53v-5.53h-5.53v5.53Z"/>
-    <path class="cls-1" d="m57.83,55.78h5.53v-5.53h-5.53v5.53Z"/>
-    <path class="cls-1" d="m52.31,61.3h5.53v-5.53h-5.53v5.53Z"/>
-    <path class="cls-1" d="m39.78,39.21h5.52v-5.53h-5.52v5.53Z"/>
-    <path class="cls-1" d="m34.26,44.72h5.53v-5.53h-5.53v5.53Z"/>
-    <path class="cls-1" d="m28.74,50.26h5.53v-5.53h-5.53v5.53Z"/>
-    <path class="cls-1" d="m34.26,55.78h5.53v-5.53h-5.53v5.53Z"/>
-    <path class="cls-1" d="m39.78,61.3h5.52v-5.53h-5.52v5.53Z"/>
+    <g>
+      <path class="cls-1" d="m29.41,13.3h-12.53v9.91h19.83v-9.91h-7.3Z"/>
+      <path class="cls-1" d="m28.41,72.78h-11.54V23.21H6.98v49.59h9.9v9.91h19.83v-9.91h-8.29Z"/>
+      <path class="cls-1" d="m66.59,82.7h12.54v-9.91h-19.83v9.91h7.3Z"/>
+      <path class="cls-1" d="m67.59,23.21h11.54v49.59h9.9V23.21h-9.9v-9.91h-19.83v9.91h8.29Z"/>
+    </g>
+    <path class="cls-1" d="m58.79,31.48l-10.76,11.01-10.76-11.01-10.76,11.03.05.03-.11-.02,11.04,11.23,10.52,10.77,10.76-11.01h.01l10.76-11.01-10.76-11.01Z"/>
   </g>
 </svg>
