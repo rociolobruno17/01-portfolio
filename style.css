@@ -515,7 +515,11 @@ footer .contenedor-footer {
 
 @media (min-width: 1024px) { /* escritorio */
 
-    header nav .logo .icono {
+    header nav .logo {
+        display: none; /* Oculta el ícono por defecto */
+    }
+
+    header nav .icono {
         display: none; /* Oculta el ícono por defecto */
     }
 
