@@ -5,15 +5,12 @@ html {
 body {
     margin: 0;
     padding: 0;
-    height: 100%; 
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: #E3DED8;
 }
 
-main {
-    flex: 1; /* Esto hace que ocupe el espacio restante */
-}
 
 header nav .contenedor-menu {
     display: none;
@@ -26,7 +23,7 @@ header nav section {
 
 header nav .logo {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     height: 60px;
     margin: 10px 0 0 10px;
@@ -34,7 +31,7 @@ header nav .logo {
 
 header nav .logo img {
     height: 70%;
-    color:  #9d79f3;
+    color: #9d79f3;
 }
 
 header nav .icono {
@@ -47,7 +44,7 @@ header nav .icono {
 
 header nav .icono img {
     height: 70%;
-    color:  #9d79f3;
+    color: #9d79f3;
 }
 
 #intro {
@@ -62,6 +59,7 @@ header nav .icono img {
     width: auto;
     height: 400px;
 }
+
 #intro .contenedor-info {
     margin: 10px;
     font-family: "Manrope", sans-serif;
@@ -70,8 +68,9 @@ header nav .icono img {
 #intro .contenedor-info h1 {
     margin-top: -50px;
     font-size: 50px;
-    color:  #302a33
+    color: #302a33
 }
+
 #intro .contenedor-info p {
     margin-top: -20px;
     font-size: 21px;
@@ -80,7 +79,7 @@ header nav .icono img {
 
 #intro .contenedor-info .boton-proyectos {
     background-color: #9d79f3;
-    color:white;
+    color: white;
     border: none;
     border-radius: 12px;
     padding: 12px 24px;
@@ -89,28 +88,28 @@ header nav .icono img {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out;
     outline: none;
-  }
-  
-  #intro .contenedor-info .boton-proyectos:hover {
+}
+
+#intro .contenedor-info .boton-proyectos:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px); 
-  }
-  
-  #intro .contenedor-info .boton-proyectos:active {
+    transform: translateY(-2px);
+}
+
+#intro .contenedor-info .boton-proyectos:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(1px);
-  }
-  
-  #intro .contenedor-info .boton-proyectos:focus {
+}
+
+#intro .contenedor-info .boton-proyectos:focus {
     outline: 2px solid #9d79f3 (0, 122, 255, 0.4);
-  }
+}
 
 #sobre-mi .linea-decorativa {
     height: 2px;
     background-color: #9d79f3;
     width: 6%;
     border-style: none;
-  }
+}
 
 #sobre-mi {
     display: block;
@@ -125,7 +124,7 @@ header nav .icono img {
 #sobre-mi h2 {
     margin-top: 60px;
     font-size: 18px;
-    color:  #79747c;
+    color: #79747c;
 }
 
 #sobre-mi img {
@@ -155,19 +154,19 @@ header nav .icono img {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out;
     outline: none;
-  }
-  
-  #sobre-mi .boton-descargar:hover {
+}
+
+#sobre-mi .boton-descargar:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px); 
-  }
-  
-  #sobre-mi .boton-descargar:active {
+    transform: translateY(-2px);
+}
+
+#sobre-mi .boton-descargar:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(1px);
-  }
-  
-  #sobre-mi .boton-descargar:focus {
+}
+
+#sobre-mi .boton-descargar:focus {
     outline: 2px solid #9d79f3 (0, 122, 255, 0.4);
 }
 
@@ -184,18 +183,18 @@ header nav .icono img {
     background-color: #9d79f3;
     width: 6%;
     border-style: none;
-  }
+}
 
 #proyectos h2 {
     margin-top: 60px;
     font-size: 18px;
-    color:  #79747c;
+    color: #79747c;
 }
 
 #proyectos .grilla-proyectos {
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -209,11 +208,14 @@ header nav .icono img {
     width: 100%;
     background-color: #F5F3F0;
     border-radius: 16px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
     transition: box-shadow 0.3s ease-in-out;
 }
+
 .grilla-proyectos .proyecto:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.20); /* Sombra más fuerte */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.20);
+    /* Sombra más fuerte */
 }
 
 .grilla-proyectos .proyecto img {
@@ -221,10 +223,11 @@ header nav .icono img {
     border-radius: 16px 16px 0 0;
 
 }
+
 .grilla-proyectos .proyecto h3 {
     padding: 20px;
     font-family: "Manrope", sans-serif;
-    color:#79747c;
+    color: #79747c;
 
 }
 
@@ -233,7 +236,7 @@ header nav .icono img {
     margin-top: 30px;
     font-family: "Manrope", sans-serif;
     font-size: 18px;
-    color:  #79747c;
+    color: #79747c;
     text-align: center;
 }
 
@@ -244,14 +247,14 @@ header nav .icono img {
     background-color: #9d79f3;
     width: 6%;
     border-style: none;
-  }
+}
 
 
 
-  #skills section {
+#skills section {
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -261,13 +264,15 @@ header nav .icono img {
     padding: 10px;
     background-color: #D1CFCC;
     border-radius: 16px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
 
 }
 
 #skills div:hover {
-    background-color:#E3DED8;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.20); /* Sombra más fuerte */
+    background-color: #E3DED8;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.20);
+    /* Sombra más fuerte */
 
 }
 
@@ -279,13 +284,13 @@ header nav .icono img {
 #skills div h3 {
     text-align: center;
     font-size: 18px;
-    color:  #7C7974;
+    color: #7C7974;
     font-family: "Manrope", sans-serif;
 }
 
 #skills div h3:hover {
     color: #9d79f3;
-    font-weight:900;
+    font-weight: 900;
 }
 
 
@@ -295,7 +300,7 @@ header nav .icono img {
     width: 100%;
     margin: 0;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
     background-image: url(./fondo-contacto.png);
     background-position: center;
@@ -329,11 +334,11 @@ header nav .icono img {
 
 #contacto .contenedor-info h2 {
     font-size: 40px;
-    color:  #302a33;
-    font-weight:bolder;
+    color: #302a33;
+    font-weight: bolder;
     margin-top: -10px;
 }
- 
+
 #contacto form {
     margin: 10px;
     width: 95%;
@@ -347,8 +352,8 @@ header nav .icono img {
     display: flex;
     font-family: "Manrope", sans-serif;
     font-size: 18px;
-    color:  #302a33;
-    font-weight:bolder;
+    color: #302a33;
+    font-weight: bolder;
 }
 
 #contacto form input {
@@ -395,14 +400,14 @@ header nav .icono img {
 
 #contacto form .submit:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px); 
-  }
-  
+    transform: translateY(-2px);
+}
+
 #contacto form .submit:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(1px);
-  }
-  
+}
+
 #contacto form .submit:focus {
     outline: 2px solid #9d79f3 (0, 122, 255, 0.4);
 }
@@ -411,13 +416,13 @@ header nav .icono img {
 footer .contenedor-footer {
     padding-top: 10px;
     text-decoration: none;
-    width:100%;
+    width: 100%;
     height: 300px;
     background-color: #9d79f3;
     color: white;
     display: block;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
 
@@ -425,7 +430,7 @@ footer .contenedor-footer {
 footer .contenedor-footer .link {
     margin-top: 10px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
@@ -434,35 +439,42 @@ footer .contenedor-footer .link {
 
 footer div {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
- footer div img {
+footer div img {
     width: 30px;
     margin-top: 10px;
 
- }
+}
 
- footer div h3 {
-    color: #ffffff; /* Color de los links */
-    font-size: 16px; /* Tamaño de fuente de los links */
-    font-family: "Libre Franklin", sans-serif;
- }
-
- footer .contenedor-footer p {
-    display: flex;
-    justify-content:center;
-    color: #ffffff; /* Color de los links */
-    font-size: 12px; /* Tamaño de fuente de los links */
+footer div h3 {
+    color: #ffffff;
+    /* Color de los links */
+    font-size: 16px;
+    /* Tamaño de fuente de los links */
     font-family: "Libre Franklin", sans-serif;
 }
 
-@media (min-width: 768px) {  /* tablet */
+footer .contenedor-footer p {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    /* Color de los links */
+    font-size: 12px;
+    /* Tamaño de fuente de los links */
+    font-family: "Libre Franklin", sans-serif;
+}
+
+@media (min-width: 768px) {
+    /* tablet */
+
     header {
-        height: 40px; /* Alto fijo del header */
+        height: 40px;
+        /* Alto fijo del header */
         width: 100vw;
     }
-    
+
     header nav .contenedor-menu {
         height: 40px;
         display: flex;
@@ -472,21 +484,26 @@ footer div {
         margin-top: 10px;
         padding: 0;
     }
-    
+
     header nav .link {
-        text-decoration: none; /* Quita el subrayado de los links */
-        color: #696969; /* Color de los links */
-        font-size: 16px; /* Tamaño de fuente de los links */
+        text-decoration: none;
+        /* Quita el subrayado de los links */
+        color: #696969;
+        /* Color de los links */
+        font-size: 16px;
+        /* Tamaño de fuente de los links */
         font-family: "Libre Franklin", sans-serif;
     }
 
     header nav .link:hover {
-        color: #9d79f3; /* Color de los links */
+        color: #9d79f3;
+        /* Color de los links */
         font-weight: 700;
     }
-    
+
     header nav .logo .icono {
-        display: none; /* Oculta el ícono por defecto */
+        display: none;
+        /* Oculta el ícono por defecto */
     }
 
     #intro {
@@ -508,7 +525,7 @@ footer div {
     #intro .contenedor-info h1 {
         margin-top: 50px;
         font-size: 70px;
-        font-weight:900;
+        font-weight: 900;
         color: #33302A
     }
 
@@ -521,6 +538,7 @@ footer div {
         width: auto;
         height: 250px;
     }
+
     #sobre-mi p {
         font-size: 18px;
         color: #79747c;
@@ -531,45 +549,49 @@ footer div {
         background-color: #F5F3F0;
         border-radius: 20px;
     }
-    
+
 }
 
 
 
-@media (min-width: 1024px) { /* escritorio */
+@media (min-width: 1024px) {
+    /* escritorio */
 
     header nav .logo {
-        display: none; /* Oculta el ícono por defecto */
+        display: none;
     }
 
     header nav .icono {
-        display: none; /* Oculta el ícono por defecto */
+        display: none;
     }
 
     #intro {
         width: 95%;
         margin: 15px;
     }
-    
+
     #intro img {
         width: auto;
         height: 600px;
     }
+
     #intro .contenedor-info {
         font-family: "Manrope", sans-serif;
     }
+
     #intro .contenedor-info h1 {
         margin-top: 250px;
         font-size: 100px;
-        font-weight:900;
+        font-weight: 900;
         color: #33302A
     }
+
     #intro .contenedor-info p {
         margin-top: -50px;
         font-size: 30px;
         color: #7C7974
     }
-    
+
     #sobre-mi img {
         margin: 0;
         width: auto;
@@ -598,6 +620,7 @@ footer div {
         left: -100px;
         right: 100px;
     }
+
     #contacto .contenedor-info {
         width: 60%;
         position: relative;
@@ -608,51 +631,44 @@ footer div {
 
 
     footer .contenedor-footer {
-        text-decoration: none; /* Quita el subrayado de los links */
-        width:100%;
+        width: 100%;
         height: 100px;
+        padding: 0;
+        margin: 0;
         background-color: #9d79f3;
         text-align: center;
         color: white;
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    footer .contenedor-footer {
-        display: flex;
         justify-content: space-around;
         align-items: center;
         list-style: none;
-        text-decoration: none; /* Quita el subrayado de los links */
-        padding: 0;  /* Elimina espacio extra */
-        margin: 0;
+        text-decoration: none;
     }
-    
+
     footer .contenedor-footer .link {
-        text-decoration: none; /* Quita el subrayado de los links */
-        color: #ffffff; /* Color de los links */
-        font-size: 16px; /* Tamaño de fuente de los links */
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
         font-family: "Libre Franklin", sans-serif;
     }
-    
+
     footer div {
         margin-right: 30px;
     }
-    
-     footer div img {
+
+    footer div img {
         width: 30px;
-     }
-    
-     footer div h3 {
-        color: #ffffff; /* Color de los links */
-        font-size: 16px; /* Tamaño de fuente de los links */
+    }
+
+    footer div h3 {
+        color: #ffffff;
+        font-size: 16px;
         font-family: "Libre Franklin", sans-serif;
-     }
-    
-     footer .contenedor-footer p {
-        color: #ffffff; /* Color de los links */
-        font-size: 12px; /* Tamaño de fuente de los links */
+    }
+
+    footer .contenedor-footer p {
+        color: #ffffff;
+        font-size: 12px;
         font-family: "Libre Franklin", sans-serif;
     }
 }
